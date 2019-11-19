@@ -33,15 +33,15 @@ while 1:
         print i
         i = i+1
         if mode == "chupdown":
-            os.system("irsend SEND_ONCE shes1907_rcu KEY_UP")
+            os.system("irsend SEND_ONCE sehs1907_rcu KEY_UP")
             time.sleep(delayinSecs)
-            os.system("irsend SEND_ONCE shes1907_rcu KEY_DOWN")
+            os.system("irsend SEND_ONCE sehs1907_rcu KEY_DOWN")
             time.sleep(delayinSecs)
         elif mode == "chdown":
-            os.system("irsend SEND_ONCE shes1907_rcu KEY_DOWN")
+            os.system("irsend SEND_ONCE sehs1907_rcu KEY_DOWN")
             time.sleep(delayinSecs)
         elif mode == "chup":
-            os.system("irsend SEND_ONCE shes1907_rcu KEY_UP")
+            os.system("irsend SEND_ONCE sehs1907_rcu KEY_UP")
             time.sleep(delayinSecs)
         else:
             print "ERROR INVALID MODE"
